@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ADTx2</string>
+    <string name="Item_Name">nazwa</string>
+    <string name="Item_Price">cena</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

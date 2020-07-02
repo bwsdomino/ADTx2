@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".database">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:text="BAZA DANYCH"></TextView>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="powrót do Menu" />
+
+</LinearLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/id"
+            android:maxWidth="100dp"
+            android:inputType="text"
+            android:hint="@string/Item_Name"
+            android:digits="aąbcćdeęfghijklmnńoópqrsśtuvwxyzżźABCDEFGHIJKLMNOÓPQRSTUVWXYZ"></EditText>
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/name"
+            android:maxLength="5"
+            android:inputType="numberDecimal"
+            android:hint="@string/Item_Price"></EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:id="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRem"
+            android:visibility="invisible"
+            android:text="Usuń"
+            tools:visibility="visible"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:layout_toRightOf="@+id/btnRem"
+            android:text="Dodaj"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCnc"
+            android:layout_toRightOf="@+id/btnAdd"
+            android:text="Wróć"
+            android:visibility="invisible"
+            tools:visibility="visible"></Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+
+        android:id="@+id/search">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:hint="Wyszukaj"
+            android:id="@+id/Et_search"
+            android:layout_height="wrap_content"
+            android:digits="aąbcćdeęfghijklmnńoópqrsśtuvwxyzżźABCDEFGHIJKLMNOÓPQRSTUVWXYZ"></EditText>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:id="@+id/list"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
