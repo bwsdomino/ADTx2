@@ -24,11 +24,22 @@ tools:context=".order">
         android:textColor="#ffffff"
         android:layout_margin="10dp"
         android:textSize="30dp"></TextView>
-    <Button
-        android:id="@+id/btnExit3"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Powrót do menu" />
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btnExit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powrót do menu" />
+        <Button
+            android:id="@+id/toAdd"
+            android:layout_below="@+id/btnExit3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dodaj" />
+    </RelativeLayout>
+
 </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout
@@ -41,6 +52,7 @@ tools:context=".order">
             android:layout_height="wrap_content"></ListView>
 
     </RelativeLayout>
+
 
 
 

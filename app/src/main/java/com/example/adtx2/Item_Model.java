@@ -18,6 +18,7 @@ public class Item_Model {
                 ": " + price +"zł";
     }
 
+
     public int getId() {
         return id;
     }

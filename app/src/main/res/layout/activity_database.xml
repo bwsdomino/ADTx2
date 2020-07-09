@@ -64,8 +64,9 @@
             android:layout_toRightOf="@+id/id"
             android:maxWidth="100dp"
             android:inputType="text"
+            android:maxLength="50"
             android:hint="@string/Item_Name"
-            android:digits="aąbcćdeęfghijklmnńoópqrsśtuvwxyzżźABCDEFGHIJKLMNOÓPQRSTUVWXYZ"></EditText>
+            android:digits="1234567890aąbcćdeęfghijklmnńoóp qrsśtuvwxyzżźABCDEFGHIJKLMNOÓPQRSTUVWXYZ"></EditText>
 
         <EditText
             android:id="@+id/price"
@@ -74,7 +75,10 @@
             android:layout_toRightOf="@+id/name"
             android:maxLength="5"
             android:inputType="numberDecimal"
-            android:hint="@string/Item_Price"></EditText>
+            android:digits="1234567890"
+            android:hint="@string/Item_Price">
+
+        </EditText>
 
     </RelativeLayout>
 
@@ -119,10 +123,11 @@
 
         <EditText
             android:layout_width="wrap_content"
+            android:maxWidth="200dp"
             android:hint="Wyszukaj"
             android:id="@+id/Et_search"
             android:layout_height="wrap_content"
-            android:digits="aąbcćdeęfghijklmnńoópqrsśtuvwxyzżźABCDEFGHIJKLMNOÓPQRSTUVWXYZ"></EditText>
+            android:digits="aąbcćdeęfghijklmnńoópqrsśtuvwxy zżźABCDEFGHIJKLMNOÓPQRSTUVWXYZ"></EditText>
 
 
 

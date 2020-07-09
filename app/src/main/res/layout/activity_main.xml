@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:theme="?attr/actionBarTheme"
-        android:text="ADT DElUXE"
+        android:text="@string/adt_deluxe"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -20,10 +20,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="ADT DElUXE"
+            android:text="@string/adt_deluxe"
             android:gravity="center"
             android:textColor="#ffffff"
-            android:textSize="30dp"></TextView>
+            android:textSize="30sp"></TextView>
     </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout
@@ -39,27 +39,27 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/calc"
-            android:text="Baza Przedmiotów" />
+            android:text="@string/baza_przedmiot_w" />
 
         <Button
             android:id="@+id/order"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/db"
-            android:text="Baza Zamówień" />
+            android:text="@string/baza_zam_wie" />
 
         <Button
             android:id="@+id/calc"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Kalkulator" />
+            android:text="@string/nowe_zam_wienie" />
         <Button
             android:id="@+id/exitAll"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/order"
             android:layout_marginTop="30dp"
-            android:text="wyjście" />
+            android:text="@string/wyj_cie" />
     </RelativeLayout>
 
     <TextView
@@ -68,7 +68,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:text="madeByDomino"></TextView>
+        android:text="@string/madebydomino"></TextView>
 
 
 </RelativeLayout>
