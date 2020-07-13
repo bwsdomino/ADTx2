@@ -166,6 +166,14 @@
         android:layout_below="@+id/l3"
         android:visibility="invisible"
         tools:visibility="visible"></Button>
+    <Button
+        android:id="@+id/mkPDF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stwórz PDF"
+        android:layout_below="@+id/delObj"
+        android:visibility="invisible"
+        tools:visibility="visible"></Button>
 
 </RelativeLayout>
 
